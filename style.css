@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Sniglet&display=swap');
+
+*{
+    box-sizing: border-box; /* silinirse toolbar taşar */
+}
+body{
+    background-color: rgb(160, 169, 252);
+    font-family: 'Sniglet', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+canvas{
+    background-color: white;
+   border:2px solid black;
+   border-radius: 15px 15px 0  0;
+border-bottom: 0ch;
+
+}
+.toolbar {
+    background-color: rgb(247, 140, 238);
+    border: 2px solid black;
+    border-bottom: 0rcap;
+    border-radius: 0 0 15px 15px;
+    display: flex;
+    width: 604px;
+    padding: 0.25rem;
+}
+
+.toolbar >* { /* bu sayade toolbar altındaki bütün html etiketlerine ulaşılır */
+border:.1rem solid  black;
+background-color: rgb(197, 62, 129);
+border-radius: 5px;
+font-weight: bold;
+font-size: 7 rem;
+font-family: inherit;
+color: white;
+display: inline-flex;
+justify-content: center;
+align-items:center;
+width: 32px;
+height: 32px;
+margin: .30rem;
+padding: .25rem;
+transition: color 0.5s ease;
+}
+.toolbar > x :last-child { /* bununla sağa attı*/
+    margin-left: auto;
+}
+.toolbar button:active {
+  transform: scale(0.9);
+}
+
+.toolbar button:hover {
+  color: black;
+}
